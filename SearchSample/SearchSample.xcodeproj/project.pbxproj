@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C231FE6203D46D700FBFE6E /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C231FE5203D46D700FBFE6E /* ProfileDetailView.swift */; };
 		4C3CDF81203A953A0061C3FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3CDF80203A953A0061C3FA /* AppDelegate.swift */; };
 		4C3CDF83203A953A0061C3FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3CDF82203A953A0061C3FA /* ViewController.swift */; };
 		4C3CDF86203A953A0061C3FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3CDF84203A953A0061C3FA /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		02F77DCAB70B240D0CF3080F /* Pods-SearchSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchSampleUITests/Pods-SearchSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0E75A997CCEB639288D2CA79 /* Pods-SearchSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchSampleTests/Pods-SearchSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		49D9DAE8D0C2F3503BA2C3B8 /* Pods_SearchSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C231FE5203D46D700FBFE6E /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
 		4C3CDF7D203A953A0061C3FA /* SearchSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3CDF80203A953A0061C3FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C3CDF82203A953A0061C3FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7033DF203BED1800325546 /* TweetTableViewCell.swift */,
+				4C231FE5203D46D700FBFE6E /* ProfileDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				4C7033E2203BF0A200325546 /* TweetsViewViewModel.swift in Sources */,
 				4C7033D4203B254A00325546 /* ParentModel.swift in Sources */,
 				4C7033DB203B295000325546 /* MetaData.swift in Sources */,
+				4C231FE6203D46D700FBFE6E /* ProfileDetailView.swift in Sources */,
 				4C3CDF81203A953A0061C3FA /* AppDelegate.swift in Sources */,
 				4C7033E7203C30FE00325546 /* ProfileViewController.swift in Sources */,
 				4C7033D8203B271100325546 /* User.swift in Sources */,

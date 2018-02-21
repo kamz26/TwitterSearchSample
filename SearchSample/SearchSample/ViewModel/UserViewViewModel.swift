@@ -7,7 +7,13 @@
 //
 
 import Foundation
-class  UserViewViewModel {
+import UIKit
+
+protocol PresentDeatil {
+    func showData(view:UIView)
+}
+
+class  UserViewViewModel :PresentDeatil{
     var user:User?
     var nameText:String?{
         guard let name = user?.name else{
@@ -53,7 +59,13 @@ class  UserViewViewModel {
         self.user = user
         
     }
-    
+    func showData(view:UIView){
+        
+       var view1 = view as! ProfileDetailView
+        
+        view1.presentView(vm:self)
+        
+    }
     
     
     

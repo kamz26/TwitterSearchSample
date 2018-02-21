@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "pass"{
             let destination = segue.destination as! ProfileViewController
-            destination.userViewViewModel = sender as! UserViewViewModel
+            destination.userViewViewModel = sender as? UserViewViewModel
         }
     }
 

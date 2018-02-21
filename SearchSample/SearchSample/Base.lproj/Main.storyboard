@@ -106,7 +106,7 @@
         <scene sceneID="3nz-jL-V5l">
             <objects>
                 <viewController id="6Ta-xT-Maq" customClass="ProfileViewController" customModule="SearchSample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="G9R-B9-KxS">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ProfileDetailView" id="G9R-B9-KxS" customClass="ProfileDetailView" customModule="SearchSample" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -203,15 +203,17 @@
                             <constraint firstItem="DQ2-c7-mGS" firstAttribute="leading" secondItem="lng-oG-RhY" secondAttribute="leading" constant="20" id="sSw-cD-n7F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lng-oG-RhY"/>
+                        <connections>
+                            <outlet property="profilepic" destination="aDf-3G-7ON" id="ygj-2f-Mkg"/>
+                            <outletCollection property="labels" destination="s6i-FF-l6n" collectionClass="NSMutableArray" id="mZE-dN-vcE"/>
+                            <outletCollection property="labels" destination="DGK-Tk-l4x" collectionClass="NSMutableArray" id="tX8-BA-Bt9"/>
+                            <outletCollection property="labels" destination="fvL-Qh-yxS" collectionClass="NSMutableArray" id="82k-6a-3r0"/>
+                            <outletCollection property="labels" destination="Ogt-om-aQ7" collectionClass="NSMutableArray" id="Qm0-lo-EbP"/>
+                            <outletCollection property="labels" destination="IVm-V3-N8R" collectionClass="NSMutableArray" id="Sau-tu-Lan"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="profilepic" destination="aDf-3G-7ON" id="e1I-xQ-Sas"/>
-                        <outletCollection property="labels" destination="s6i-FF-l6n" collectionClass="NSMutableArray" id="Des-sR-i1g"/>
-                        <outletCollection property="labels" destination="DGK-Tk-l4x" collectionClass="NSMutableArray" id="we6-RT-kim"/>
-                        <outletCollection property="labels" destination="fvL-Qh-yxS" collectionClass="NSMutableArray" id="MCN-fH-1ko"/>
-                        <outletCollection property="labels" destination="Ogt-om-aQ7" collectionClass="NSMutableArray" id="Jjn-1U-wJA"/>
-                        <outletCollection property="labels" destination="IVm-V3-N8R" collectionClass="NSMutableArray" id="0Fk-OP-pYP"/>
-                        <outletCollection property="labels" destination="DGK-Tk-l4x" collectionClass="NSMutableArray" id="Kg0-tf-9gU"/>
+                        <outlet property="profileView" destination="G9R-B9-KxS" id="2hn-jj-FJe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mud-w0-MWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
