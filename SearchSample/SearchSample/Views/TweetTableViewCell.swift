@@ -22,8 +22,7 @@ class TweetTableViewCell: UITableViewCell {
         
         tweetText.text = vm.tweetText
         createdAtText.text = vm.createdAtText
-        
-    }
+   }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

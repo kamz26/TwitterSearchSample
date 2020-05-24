@@ -16,9 +16,6 @@ struct ParentViewViewModel{
     var parentModel:ParentModel
     var tweetViewModel:[TweetsViewViewModel] = [TweetsViewViewModel]()
     var userViewModelArray = [UserViewViewModel]()
-    
-  
-    
 }
 extension ParentViewViewModel{
     

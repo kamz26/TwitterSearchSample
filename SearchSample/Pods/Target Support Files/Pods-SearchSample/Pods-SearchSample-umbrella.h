@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SearchSampleqVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SearchSampleqVersionString[];
+FOUNDATION_EXPORT double Pods_SearchSampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SearchSampleVersionString[];
 

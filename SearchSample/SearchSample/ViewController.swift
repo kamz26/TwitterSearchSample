@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             
             do{
                 self.aurthorize = try JSONDecoder().decode(Authorization.self, from: data!)
-               
+                
             }catch{
                 print("err!!!")
             }
@@ -79,27 +79,20 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
-    }
+   
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
        
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-      
-        if parentViewViewModel != nil{
+       if parentViewViewModel != nil{
             return (parentViewViewModel?.tweetViewModel[indexPath.row].cellInstance(tableView,indexPath:indexPath))!
         }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        //print(parentViewViewModel?.userViewModelArray[indexPath.row].nameText)
-        
         let userModelViewModel = parentViewViewModel?.userViewModelArray[indexPath.row]
         self.performSegue(withIdentifier: "pass", sender: userModelViewModel!)
         
